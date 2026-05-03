@@ -1,46 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - My Portfolio</title>
+    <title>About | Tan Jia Jie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">TanJiaJie</div>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="index.html">Tan<span>JiaJie</span></a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-            <a href="Resume.pdf" target="_blank">Resume</a>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="Resume.pdf" target="_blank">Resume</a></li>
           <li><a href="projects.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section id="about-me">
-        <h1>About Me</h1>
+    <main class="section page-section">
+      <div class="container narrow fade-up">
+        <p class="eyebrow">About Me</p>
+        <h1>Building practical web systems with clean interface design.</h1>
         <p>
-          Hello! I'm TanJiaJie, a passionate developer with a focus on web
-          development and software engineering.
+          I am Tan Jia Jie, a developer focused on web development, database systems, and user-friendly digital experiences. I enjoy turning ideas into working websites and systems that are easy to understand and use.
         </p>
         <p>
-          I have experience in various programming languages, including HTML,
-          CSS, JavaScript, PHP, and more.
+          My current skill set includes HTML, CSS, JavaScript, PHP, MySQL, GitHub, and basic UI/UX design. I am continuously improving my portfolio by adding real projects, case studies, and better visual presentation.
         </p>
-      </section>
+
+        <div class="skills-panel">
+          <h2>Skills</h2>
+          <div class="tag-list">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>GitHub</span><span>Vercel</span><span>UI/UX</span>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p>&copy; 2024 JiaJie's Portfolio. All rights reserved.</p>
+    <footer class="footer">
+      <p>&copy; 2026 Tan Jia Jie. All rights reserved.</p>
     </footer>
   </body>
 </html>
