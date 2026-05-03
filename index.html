@@ -1,21 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tan Jia Jie | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>TanJiaJie | Portfolio</title>
+
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header class="site-header">
       <nav class="navbar container">
-        <a class="logo" href="index.html">Tan<span>JiaJie</span></a>
+        <a href="index.html" class="logo">Tan<span>JiaJie</span></a>
+
         <ul class="nav-links">
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="Resume.pdf" target="_blank">Resume</a></li>
           <li><a href="projects.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -24,26 +30,40 @@
     </header>
 
     <main>
-      <section class="hero section">
+      <section class="section">
         <div class="container hero-grid">
           <div class="hero-content fade-up">
-            <p class="eyebrow">Web Developer • Database Administrator</p>
-            <h1>Hello, I’m <span>Tan Jia Jie</span>.</h1>
-            <p class="hero-text">
-              I build clean, responsive, and user-friendly web experiences using HTML, CSS, JavaScript, PHP, and MySQL. This portfolio showcases my academic projects, web systems, and design-development journey.
+            <p class="eyebrow">
+              Database Administrator • Web System Developer
             </p>
+
+            <h1>Hello, I’m <span>Tan Jia Jie.</span></h1>
+
+            <p class="hero-text">
+              I am an aspiring Database Administrator with experience in HTML,
+              CSS, JavaScript, PHP, MySQL, and phpMyAdmin. I enjoy designing
+              organised database structures, managing data flow, and building
+              web systems that are clean, efficient, and user-friendly.
+            </p>
+
             <div class="hero-actions">
-              <a class="btn primary" href="projects.html">View Projects</a>
-              <a class="btn secondary" href="Resume.pdf" target="_blank">View Resume</a>
+              <a href="projects.html" class="btn primary">View Projects</a>
+              <a href="Resume.pdf" target="_blank" class="btn secondary">
+                View Resume
+              </a>
             </div>
           </div>
+
           <div class="hero-card fade-up delay">
             <div class="image-ring">
-              <img src="images/jiajie.jpg" alt="Portrait of Tan Jia Jie" />
+              <img src="images/jiajie.jpg" alt="Tan Jia Jie profile image" />
             </div>
+
             <div class="mini-card">
               <strong>Currently improving</strong>
-              <span>Portfolio, front-end design, database projects</span>
+              <span>
+                Database design, MySQL, phpMyAdmin, and web system development
+              </span>
             </div>
           </div>
         </div>
@@ -51,15 +71,26 @@
 
       <section class="section stats-section">
         <div class="container stats-grid">
-          <div class="stat-card"><strong>HTML/CSS/JS</strong><span>Front-end</span></div>
-          <div class="stat-card"><strong>PHP + MySQL</strong><span>Back-end basics</span></div>
-          <div class="stat-card"><strong>UI/UX</strong><span>Interface thinking</span></div>
+          <div class="stat-card fade-up">
+            <strong>MySQL / Database</strong>
+            <span>Database design & management</span>
+          </div>
+
+          <div class="stat-card fade-up delay">
+            <strong>PHP + Web Systems</strong>
+            <span>Back-end development basics</span>
+          </div>
+
+          <div class="stat-card fade-up delay-2">
+            <strong>HTML / CSS / JS</strong>
+            <span>Front-end interface development</span>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>&copy; 2026 Tan Jia Jie. Built with HTML, CSS, and GitHub + Vercel.</p>
+      <p>&copy; 2025 TanJiaJie's Portfolio. All rights reserved.</p>
     </footer>
   </body>
 </html>
