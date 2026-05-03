@@ -1,0 +1,418 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+section {
+  margin-top: 30px;
+}
+
+/* =========================
+   HEADER & NAV
+========================= */
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6a0dad;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+#home {
+  background: linear-gradient(135deg, #f7f0ff, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.home-content {
+  max-width: 50%;
+}
+
+.home-content h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.home-content h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.home-content h2 span {
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+.home-content p {
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #555;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid #6a0dad;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hire-me {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.portfolio {
+  color: #6a0dad;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #6a0dad;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.home-image {
+  max-width: 50%;
+  text-align: right;
+}
+
+.home-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   CARD SECTIONS
+========================= */
+
+#skills,
+#languages,
+#highlights,
+#achievement,
+#contact {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+#skills h1,
+#languages h1,
+#highlights h1,
+#achievement h1,
+#contact h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  background: #f7f0ff;
+  padding: 24px;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(106, 13, 173, 0.2);
+}
+
+.skill-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #6a0dad;
+  font-size: 18px;
+}
+
+.skill-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* =========================
+   ACHIEVEMENT
+========================= */
+
+#achievement p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 850px;
+}
+
+#achievement strong {
+  color: #6a0dad;
+}
+
+/* =========================
+   LANGUAGES & GOAL
+========================= */
+
+#languages p,
+#highlights p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  max-width: 850px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact p {
+  max-width: 850px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.contact-card {
+  background: #f7f0ff;
+  padding: 22px;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(106, 13, 173, 0.2);
+}
+
+.contact-card h3 {
+  margin: 0 0 10px 0;
+  color: #6a0dad;
+  font-size: 18px;
+}
+
+.contact-card a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: #6a0dad;
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+  color: #666;
+  margin-top: 80px;
+  border-top: 1px solid #eee;
+}
+
+/* =========================
+   RESPONSIVE (TABLET)
+========================= */
+
+@media (max-width: 900px) {
+  .home-content,
+  .home-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .home-container {
+    flex-direction: column-reverse;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #home {
+    padding: 30px 20px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h2 {
+    font-size: 26px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  #skills,
+  #languages,
+  #highlights,
+  #achievement,
+  #contact {
+    padding: 32px 22px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   RESPONSIVE (SMALL MOBILE)
+========================= */
+
+@media (max-width: 400px) {
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content h2 {
+    font-size: 22px;
+  }
+
+  .home-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
