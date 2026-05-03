@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Tan Jia Jie</title>
+    <title>Contact | Tan Jia Jie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,31 +16,40 @@
         <a class="logo" href="index.html">Tan<span>JiaJie</span></a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="Resume.pdf" target="_blank">Resume</a></li>
           <li><a href="projects.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="section page-section">
-      <div class="container narrow fade-up">
-        <p class="eyebrow">About Me</p>
-        <h1>Building practical web systems with clean interface design.</h1>
-        <p>
-          I am Tan Jia Jie, a developer focused on web development, database systems, and user-friendly digital experiences. I enjoy turning ideas into working websites and systems that are easy to understand and use.
-        </p>
-        <p>
-          My current skill set includes HTML, CSS, JavaScript, PHP, MySQL, GitHub, and basic UI/UX design. I am continuously improving my portfolio by adding real projects, case studies, and better visual presentation.
-        </p>
-
-        <div class="skills-panel">
-          <h2>Skills</h2>
-          <div class="tag-list">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>GitHub</span><span>Vercel</span><span>UI/UX</span>
+      <div class="container contact-grid">
+        <div class="fade-up">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s connect.</h1>
+          <p>
+            Feel free to contact me for project opportunities, collaboration, or internship-related discussions.
+          </p>
+          <div class="contact-list">
+            <a href="mailto:odintan93@gmail.com">odintan93@gmail.com</a>
+            <a href="Resume.pdf" target="_blank">View Resume</a>
           </div>
         </div>
+
+        <form class="contact-card fade-up delay" action="mailto:odintan93@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
       </div>
     </main>
 
