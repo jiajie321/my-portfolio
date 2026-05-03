@@ -1,24 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Tan Jia Jie | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">TanJiaJie</div>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="logo" href="index.html">Tan<span>JiaJie</span></a>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-       <a href="Resume.pdf" target="_blank">Resume</a>
+          <li><a href="Resume.pdf" target="_blank">Resume</a></li>
           <li><a href="projects.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -26,32 +25,42 @@
     </header>
 
     <main>
-      <section id="home">
-        <div class="home-container">
-          <div class="home-content">
-            <h1>Hello</h1>
-            <h2>I'm <span>TanJiaJie</span>, a Web Developer</h2>
-            <p>
-              Welcome to my web developer portfolio! I'm TanJiaJie, a skilled
-              and creative web developer with a passion for creating beautiful,
-              responsive, and user-friendly websites. I've worked on a variety
-              of web projects, ranging from personal blogs to e-commerce
-              platforms.
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content fade-up">
+            <p class="eyebrow">Web Developer • UI/UX Learner • Database Enthusiast</p>
+            <h1>Hello, I’m <span>Tan Jia Jie</span>.</h1>
+            <p class="hero-text">
+              I build clean, responsive, and user-friendly web experiences using HTML, CSS, JavaScript, PHP, and MySQL. This portfolio showcases my academic projects, web systems, and design-development journey.
             </p>
-            <div class="buttons">
-              <a href="#" class="btn hire-me">Hire Me</a>
-              <a href="projects.html" class="btn portfolio">Portfolio</a>
+            <div class="hero-actions">
+              <a class="btn primary" href="projects.html">View Projects</a>
+              <a class="btn secondary" href="Resume.pdf" target="_blank">View Resume</a>
             </div>
           </div>
-          <div class="home-image">
-            <img src="images/jiajie.jpg" alt="TanJiaJie's Photo" />
+          <div class="hero-card fade-up delay">
+            <div class="image-ring">
+              <img src="images/jiajie.jpg" alt="Portrait of Tan Jia Jie" />
+            </div>
+            <div class="mini-card">
+              <strong>Currently improving</strong>
+              <span>Portfolio, front-end design, database projects</span>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section stats-section">
+        <div class="container stats-grid">
+          <div class="stat-card"><strong>HTML/CSS/JS</strong><span>Front-end</span></div>
+          <div class="stat-card"><strong>PHP + MySQL</strong><span>Back-end basics</span></div>
+          <div class="stat-card"><strong>UI/UX</strong><span>Interface thinking</span></div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 TanJiaJie's Portfolio. All rights reserved.</p>
+    <footer class="footer">
+      <p>&copy; 2026 Tan Jia Jie. Built with HTML, CSS, and GitHub + Vercel.</p>
     </footer>
   </body>
 </html>
